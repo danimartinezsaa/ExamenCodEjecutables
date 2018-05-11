@@ -55,7 +55,7 @@ public final class BotonActionListener implements ActionListener{
 
         try{
             //En un Array (String) almaceno todo el comando.
-            String[] cmd={"javapackager ", "-deploy ", "-native ", extension, " -outdir ", dirsalida, " -outfile ", nombre, " -srcdir ", directorio, " -srcfiles ", fichero, " -appclass ", clase, " -name ", nombre, " -title ", nombre};
+            String cmd="javapackager -deploy -native "+extension+" -outdir "+dirsalida+" -outfile "+nombre+" -srcdir "+directorio+" -srcfiles "+fichero+" -appclass "+clase+" -name "+nombre+" -title "+nombre;
             /**
              * Creo un objeto Process y de la clase Runtime accedo a los métodos
              * estáticos siguientes, al método exec le paso el Array con el
